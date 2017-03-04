@@ -1,0 +1,11 @@
+{ 
+	"dependencies" : { 
+		"webdriverio" : "latest",
+		"appium" : "latest",
+		"wdio-selenium-standalone-service" : "latest",
+		"wdio-appium-service" : "latest",
+		"wdio-mocha-framework" : "latest",
+		"wdio-dot-reporter" : "latest",
+		"wdio-allure-reporter" : "latest"
+	}
+}
