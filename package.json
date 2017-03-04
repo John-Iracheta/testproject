@@ -6,6 +6,7 @@
 		"wdio-appium-service" : "latest",
 		"wdio-mocha-framework" : "latest",
 		"wdio-dot-reporter" : "latest",
-		"wdio-allure-reporter" : "latest"
+		"wdio-allure-reporter" : "latest",
+		"chai" : "latest"
 	}
 }

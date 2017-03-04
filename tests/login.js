@@ -5,6 +5,6 @@ describe('login form', function() {
 		LoginPage.open();
 		LoginPage.username.setValue('johni1028@gmail.com');
 		LoginPage.password.setValue('john1028');
-		LoginPage.submit();
+		LoginPage.username.submitForm();
 	});
 })
