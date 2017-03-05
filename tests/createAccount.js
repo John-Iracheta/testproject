@@ -1,5 +1,5 @@
 var expect = require('chai').expect
-var LoginPage = require('../lib/loginPage.page.js')
+var LoginPage = require('../lib/loginPage.page')
 
 browser.timeouts('implicit', 5000);
 
@@ -11,11 +11,11 @@ describe('create a new account', function() {
 	});
 
 	it('enter new account details and select course', function() {
-		LoginPage.username.setValue('test3@test.com');
+		LoginPage.email.setValue('test18@test.com');
 		LoginPage.password.setValue('password');
 		LoginPage.firstName.setValue('John');
 		LoginPage.selectCourse('Texas Real Estate - Legal Update II');
-		LoginPage.username.submitForm();
+		LoginPage.email.submitForm();
 	});
 
 	it('purchase course', function() {
@@ -24,6 +24,12 @@ describe('create a new account', function() {
 		LoginPage.creditCardCVC.setValue('111');
 		LoginPage.termsAndConditions.click();
 		LoginPage.creditCardNumber.submitForm();
+		browser.pause(2000);
+
+		expect(LoginPage.coursePurchasedModal.getText()).to.contain('Course Purchased!');
+		LoginPage.closeCoursePurchasedModal();
+
+		browser.pause(5000);
 	});
 
 });
