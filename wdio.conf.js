@@ -9,7 +9,7 @@ exports.config = {
     // values you need to put in here in order to connect to these services.
     //
     user: 'John-Iracheta',
-    key: '69d814c0-a828-4c40-9417-df5c629897f8',
+    key: '',
     
     
     //
