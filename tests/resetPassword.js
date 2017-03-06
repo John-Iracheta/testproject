@@ -9,16 +9,20 @@ describe('Attempt to sign in with invalid creds then request pw reset', function
 		LoginPage.email.setValue('johni1028@gmail.com');
 		LoginPage.password.setValue('wrongpassword');
 		LoginPage.email.submitForm();
-
-		expect(LoginPage.invalidCredentialModal.getText()).to.contain("Oops! We don't recognize that email and password.");
-	});
-
-	it('close modal', function() {
-		LoginPage.closeInvalidCredentialModal();
+		browser.pause(1000);
+		expect(LoginPage.invalidCredentialModal.getText()).to.contain("Oh No!");
+		LoginPage.closeModal();
 	});
 
 	it('click reset password link', function() {
-		LoginPage.resetUserPassword();
+		LoginPage.resetPassword();
+		browser.pause(1000);
+		LoginPage.requestReset();
+		browser.pause(1000);
+
+		expect(LoginPage.resetPasswordConfirmation.getText()).to.contain("Alright!");
+		LoginPage.closeModal();
+		browser.pause(3000);
 	});
 
 });

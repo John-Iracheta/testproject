@@ -1,12 +1,13 @@
-{ 
-	"dependencies" : { 
-		"webdriverio" : "latest",
-		"appium" : "latest",
-		"wdio-selenium-standalone-service" : "latest",
-		"wdio-appium-service" : "latest",
-		"wdio-mocha-framework" : "latest",
-		"wdio-dot-reporter" : "latest",
-		"wdio-allure-reporter" : "latest",
-		"chai" : "latest"
-	}
+{
+  "dependencies": {
+    "webdriverio": "latest",
+    "appium": "latest",
+    "wdio-selenium-standalone-service": "latest",
+    "wdio-appium-service": "latest",
+    "wdio-mocha-framework": "latest",
+    "wdio-dot-reporter": "latest",
+    "wdio-allure-reporter": "latest",
+    "wdio-sauce-service": "latest",
+    "chai": "latest"
+  }
 }

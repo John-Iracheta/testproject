@@ -2,3 +2,5 @@ node_modules
 errorShots
 reports
 *.log
+allure-report
+allure-results
